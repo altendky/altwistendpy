@@ -2,8 +2,8 @@ import attr
 import click
 import twisted.internet.defer
 
-import altwistendky.examples.amp.client
-import altwistendky.examples.amp.server
+import altwistendpy.examples.amp.client
+import altwistendpy.examples.amp.server
 
 
 @attr.s
@@ -26,7 +26,7 @@ def cli(context):
 @cli.command()
 @click.pass_obj
 def serve(context):
-    altwistendky.examples.amp.server.serve(reactor=context.reactor)
+    altwistendpy.examples.amp.server.serve(reactor=context.reactor)
     context.reactor.run()
 
 
@@ -34,7 +34,7 @@ def serve(context):
 @click.option('--text', required=True)
 @click.pass_obj
 def connect(context, text):
-    d = altwistendky.examples.amp.client.client(
+    d = altwistendpy.examples.amp.client.client(
         reactor=context.reactor,
         text=text,
     )

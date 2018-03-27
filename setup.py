@@ -2,11 +2,11 @@ import setuptools
 
 
 setuptools.setup(
-    name='altwistendky',
+    name='altwistendpy',
     description="Extras for working with Twisted.",
     author='Kyle Altendorf',
     author_email='sda@fstab.net',
-    url='https://github.com/altendky/altwistendky',
+    url='https://github.com/altendky/altwistendpy',
     packages=setuptools.find_packages('src'),
     package_dir={'': 'src'},
     classifiers=[
@@ -18,7 +18,7 @@ setuptools.setup(
     ],
     entry_points={
         'console_scripts': [
-            'amp = altwistendky.examples.amp.cli:cli',
+            'amp = altwistendpy.examples.amp.cli:cli',
         ],
     },
     install_requires=[

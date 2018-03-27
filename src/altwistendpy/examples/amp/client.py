@@ -6,7 +6,7 @@ import twisted.protocols.amp
 import twisted.python.log
 import twisted.internet.defer
 
-import altwistendky.examples.amp.commands
+import altwistendpy.examples.amp.commands
 
 
 def connect(reactor):
@@ -28,7 +28,7 @@ def client(reactor, text):
 
     protocol = yield connect(reactor)
     result = yield protocol.callRemote(
-        altwistendky.examples.amp.commands.Print,
+        altwistendpy.examples.amp.commands.Print,
         text=text,
     )
     print('result: {}'.format(repr(result)))
