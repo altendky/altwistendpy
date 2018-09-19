@@ -3,7 +3,7 @@ altwistendpy
 
 |PyPI| |Pythons| |Circle| |GitHub|
 
-Maintain your .gitignore using gitignore.io.
+Extras for working with Twisted.
 
 .. |PyPI| image:: https://img.shields.io/pypi/v/altwistendpy.svg
    :alt: PyPI Version
