@@ -35,6 +35,11 @@ jobs:
             venv/bin/python setup.py bdist_wheel --dist-dir=dist
             venv/bin/python setup.py sdist --formats=gztar,zip --dist-dir=dist
 
+      - run:
+          name: Deploy to PyPI.
+          command: |
+            venv/bin/python twineversioneer.py upload dist/*
+
       - store_artifacts:
           path: dist/
 
