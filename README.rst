@@ -17,6 +17,6 @@ Maintain your .gitignore using gitignore.io.
    :alt: Circle build status
    :target: https://circleci.com/gh/altendky/altwistendpy
 
-.. |GitHub| image:: https://img.shields.io/github/last-commit/altendky/altwistendpy/master.svg
+.. |GitHub| image:: https://img.shields.io/github/last-commit/altendky/altwistendpy/develop.svg
    :alt: Source on GitHub
    :target: https://github.com/altendky/altwistendpy
