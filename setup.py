@@ -1,5 +1,7 @@
 import setuptools
 
+import versioneer
+
 
 setuptools.setup(
     name='altwistendpy',
@@ -7,6 +9,8 @@ setuptools.setup(
     author='Kyle Altendorf',
     author_email='sda@fstab.net',
     url='https://github.com/altendky/altwistendpy',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     packages=setuptools.find_packages('src'),
     package_dir={'': 'src'},
     classifiers=[
