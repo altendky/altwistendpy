@@ -33,7 +33,7 @@ jobs:
           name: Build the wheel.
           command: |
             venv/bin/python setup.py bdist_wheel --dist-dir=dist
-            venv/bin/python setup.py sdist --formats=gztar,zip --dist-dir=dist
+            venv/bin/python setup.py sdist --formats=gztar --dist-dir=dist
 
       - run:
           name: Deploy to PyPI.
