@@ -50,4 +50,4 @@ workflows:
       - wheel:
           filters:
             tags:
-              only: /.*/
+              only: /^.*/
