@@ -3,9 +3,14 @@ import setuptools
 import versioneer
 
 
+with open('README.rst') as f:
+    readme = f.read()
+
 setuptools.setup(
     name='altwistendpy',
     description="Extras for working with Twisted.",
+    long_description=readme,
+    long_description_content_type='text/x-rst',
     author='Kyle Altendorf',
     author_email='sda@fstab.net',
     url='https://github.com/altendky/altwistendpy',
