@@ -29,11 +29,9 @@ setuptools.setup(
     install_requires=[
         'attrs',
         'click',
+        'gitignoreio',
+        'twine',
         'twisted',
+        'wheel',
     ],
-    extras_require={
-        'dev': [
-            'gitignoreio',
-        ],
-    },
 )
